@@ -30,7 +30,7 @@ pipeline {
                 script {
                     withDockerRegistry(credentialsId: 'docker') {
                         sh "docker tag starbucks krish9998/starbuck:latest"
-                        sh "docker push vikas4cloud/starbucks:latest"
+                        sh "docker push krish9998/starbucks:latest"
                     }
                 }
             }
